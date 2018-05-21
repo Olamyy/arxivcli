@@ -10,6 +10,7 @@ name = "pypi"
 click = "*"
 requests = "*"
 pytest = "*"
+feedparser = "*"
 
 
 [dev-packages]

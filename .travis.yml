@@ -10,4 +10,3 @@ install:
   - pipenv install
 script:
   - pytest test.py
-  - coverage run tests.py

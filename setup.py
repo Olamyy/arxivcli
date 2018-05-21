@@ -3,7 +3,7 @@ A cli package for accessing and quering arxiv papers.
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click', 'feedparser']
+dependencies = ['click', 'feedparser', 'tableprint']
 
 setup(
     name='arxivcli',
@@ -14,8 +14,6 @@ setup(
     author_email='olamyy53@gmail.com',
     description='A cli package for accessing and quering arxiv papers.',
     long_description=__doc__,
-    packages=find_packages(exclude=['tests']),
-    include_package_data=True,
     zip_safe=False,
     platforms='any',
     install_requires=dependencies,

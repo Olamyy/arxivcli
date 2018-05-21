@@ -6,3 +6,7 @@ build/
 
 .tox/
 .coverage
+
+arxivcli.egg-info
+
+.idea/*

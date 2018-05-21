@@ -11,6 +11,7 @@ click = "*"
 requests = "*"
 pytest = "*"
 feedparser = "*"
+tableprint = "*"
 
 
 [dev-packages]

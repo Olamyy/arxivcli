@@ -9,6 +9,7 @@ name = "pypi"
 
 click = "*"
 requests = "*"
+pytest = "*"
 
 
 [dev-packages]

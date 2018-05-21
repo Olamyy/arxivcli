@@ -9,5 +9,5 @@ install:
   - pip install pipenv
   - pipenv install
 script:
-  - pytest tests/test_cli.py
+  - pytest test.py
   - coverage run tests.py

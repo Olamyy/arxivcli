@@ -111,3 +111,6 @@ class Arxiv(object):
         else:
             print("Object obj has no PDF URL, or has no title")
             sys.exit()
+
+    def plot_ngram(self):
+        pass

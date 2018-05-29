@@ -7,7 +7,7 @@ dependencies = ['click', 'feedparser', 'tableprint']
 
 setup(
     name='arxivcli',
-    version='0.1.0',
+    version='0.1.0-beta',
     url='https://github.com/olamyy/arxivcli',
     license='BSD',
     author='Olamilekan Wahab',

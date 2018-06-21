@@ -30,7 +30,9 @@ def main(action, search_query, ids, start, max_result, sort_by, sort_order, v, o
     if v:
         click.echo("Building query parameters \n")
     kwargs = {"start": start, "max_result": max_result,
-              "sort_by": sort_by, "sort_order": sort_order, "search_query": search_query, "ids": ids}
+              "sort_by": sort_by, "sort_order": sort_order, "search_query": search_query}
+    if ids:
+        kwargs["ids"] = ids
     if v:
         click.echo("Parameters built \n")
     if action == "query":
@@ -46,7 +48,7 @@ def main(action, search_query, ids, start, max_result, sort_by, sort_order, v, o
         elif output == "json":
             json.dumps(query_result)
         else:
-            click.echo("Tabulating is currently not supported. It should be by tomorrow. Rolling back to pprint")
+            click.echo("Tabulating is currently not supported. Rolling back to pprint")
             pprint.pprint(query_result)
 
     if action == "download":

@@ -25,9 +25,9 @@ class Arxiv(object):
                     "max_results": self.max_result,
                     "sortBy": self.sort_by,
                     "sortOrder": self.sort_order}
-
-        if self.search_query or self.ids:
+        if self.search_query:
             url_args["search_query"] = self.search_query
+        if self.ids:
             url_args["id_list"] = self.ids
 
         self.query_url_args = urlencode(url_args)
@@ -111,3 +111,6 @@ class Arxiv(object):
         else:
             print("Object obj has no PDF URL, or has no title")
             sys.exit()
+
+    def plot_ngram(self, **kwargs):
+        pass
